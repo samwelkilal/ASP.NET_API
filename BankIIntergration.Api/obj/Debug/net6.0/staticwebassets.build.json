@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "ahVWARFBj2jm493VPr7mpddwhBwI/irIXHhU3UH0YFY=",
+  "Source": "BankIIntergration.Api",
+  "BasePath": "_content/BankIIntergration.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

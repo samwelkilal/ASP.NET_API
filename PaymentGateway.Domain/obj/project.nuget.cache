@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "IYRapC1e+56CCkKOXOLkTaCMPBvLgBJameXLVBCqIfBd6cyTMxN3Jgdh2YYUip7M090BbRUHfXPcZckKdcPO/w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\samwel.kilala\\Desktop\\C#-CQRS\\ASP.NET_API\\PaymentGateway.Domain\\PaymentGateway.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\samwel.kilala\\.nuget\\packages\\mediatr\\12.2.0\\mediatr.12.2.0.nupkg.sha512",
+    "C:\\Users\\samwel.kilala\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
+    "C:\\Users\\samwel.kilala\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
