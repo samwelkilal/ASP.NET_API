@@ -2,6 +2,7 @@
 using PaymentGateway.Application.Query;
 using PaymentGateway.Application.Repository;
 using PaymentGateway.Domain.Entites;
+using PaymentGateway.Domain.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace PaymentGateway.Application.QueryHandler
 {
-    public class GetPaymentByControlNumberQueryHandler:IRequestHandler<GetPaymentByControlNumberQuery,Payment>  
+    public class GetPaymentByControlNumberQueryHandler:IRequestHandler<GetPaymentByControlNumberQuery,ResponseModel>  
     {
         private readonly IpaymentRepository _repository;
 
@@ -20,7 +21,7 @@ namespace PaymentGateway.Application.QueryHandler
             _repository = repository;
         }
 
-        public Task<Payment> Handle(GetPaymentByControlNumberQuery request, CancellationToken cancellationToken)
+        public Task<ResponseModel> Handle(GetPaymentByControlNumberQuery request, CancellationToken cancellationToken)
         {
             var res = _repository.GetByControlNumber(request.ControlNumber);
             return res;

@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "Fqt/KYDbeIKI/RVFTfAPFzPM/GwfD140wt3598Ze8hGlz4fBzeyCKpvoF2cECjMyug9H47XihPzJKabG1ZbvSw==",
+  "dgSpecHash": "Yu+HdFbIqwgfHviF1lFrIcFAtA61dutnStQ6XAhHNOgkdUWOyDGaZbpEH8C8zPku0Vy52/4y3ILoif0yaonLpw==",
   "success": true,
   "projectFilePath": "C:\\Users\\samwel.kilala\\Desktop\\C#-CQRS\\ASP.NET_API\\PaymentGateway.Api\\PaymentGateway.Api.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\samwel.kilala\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\samwel.kilala\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\samwel.kilala\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
     "C:\\Users\\samwel.kilala\\.nuget\\packages\\mediatr\\12.2.0\\mediatr.12.2.0.nupkg.sha512",

@@ -1,6 +1,8 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using AutoMapper;
+using Microsoft.EntityFrameworkCore;
 using PaymentGateway.Application.Repository;
 using PaymentGateway.Domain.Entites;
+using PaymentGateway.Domain.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,11 +14,12 @@ namespace PaymentGateway.Infrastructure.Repositories
     public class paymentRepository : IpaymentRepository
     {
         private readonly PaymentDbContext _context;
+        private readonly IMapper _mapper;
 
-        public paymentRepository(PaymentDbContext context)
+        public paymentRepository(PaymentDbContext context,IMapper mapper)
         {
             _context = context;
-
+            _mapper = mapper;
         }
 
         public async Task AddPayment(Payment payment)
@@ -34,10 +37,10 @@ namespace PaymentGateway.Infrastructure.Repositories
            
         }
 
-        public async Task<Payment> GetByControlNumber(string controlNumber)
+        public async Task<ResponseModel> GetByControlNumber(string controlNumber)
         {
             var res = await _context.payments.FirstOrDefaultAsync(P => P.ControlNumber == controlNumber);
-            return res;
+            return _mapper.Map<ResponseModel>(res); 
         }
 
         public async Task<Payment> GetFeesById(int id)

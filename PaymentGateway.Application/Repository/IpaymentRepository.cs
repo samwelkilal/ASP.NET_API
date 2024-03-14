@@ -1,4 +1,5 @@
 ﻿using PaymentGateway.Domain.Entites;
+using PaymentGateway.Domain.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,7 +12,7 @@ namespace PaymentGateway.Application.Repository
     {
         Task AddPayment(Payment payment);
         Task<List<Payment>> GetAllPaymentsAsync();
-        Task<Payment> GetByControlNumber(string controlNumber);
+        Task<ResponseModel> GetByControlNumber(string controlNumber);
         Task<Payment> GetFeesById(int id);
     }
 }

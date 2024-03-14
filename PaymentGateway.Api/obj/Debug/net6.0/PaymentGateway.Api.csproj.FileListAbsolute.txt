@@ -259,3 +259,4 @@ C:\Users\samwel.kilala\Desktop\C#-CQRS\ASP.NET_API\PaymentGateway.Api\obj\Debug\
 C:\Users\samwel.kilala\Desktop\C#-CQRS\ASP.NET_API\PaymentGateway.Api\obj\Debug\net6.0\PaymentGateway.Api.pdb
 C:\Users\samwel.kilala\Desktop\C#-CQRS\ASP.NET_API\PaymentGateway.Api\obj\Debug\net6.0\PaymentGateway.Api.genruntimeconfig.cache
 C:\Users\samwel.kilala\Desktop\C#-CQRS\ASP.NET_API\PaymentGateway.Api\obj\Debug\net6.0\ref\PaymentGateway.Api.dll
+C:\Users\samwel.kilala\Desktop\C#-CQRS\ASP.NET_API\PaymentGateway.Api\bin\Debug\net6.0\AutoMapper.dll

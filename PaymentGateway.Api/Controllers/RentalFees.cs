@@ -47,9 +47,6 @@ namespace PaymentGateway.Api.Controllers
             return Ok(result);
         }
 
-        ///<summery>
-        ///get by control number api
-        /// </summery>
         [HttpGet("get-by control-number/{controlNumber}")]
         public async Task<IActionResult> GetByControlNumber(string controlNumber)
         {
