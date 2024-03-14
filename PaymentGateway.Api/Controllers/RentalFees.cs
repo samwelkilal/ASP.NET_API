@@ -47,6 +47,26 @@ namespace PaymentGateway.Api.Controllers
             return Ok(result);
         }
 
+        ///<summery>
+        ///get by control number api
+        /// </summery>
+        [HttpGet("get-by control-number/{controlNumber}")]
+        public async Task<IActionResult> GetByControlNumber(string controlNumber)
+        {
+            var query = new GetPaymentByControlNumberQuery(controlNumber);
+            var res = await _mediator.Send(query);
+
+            if (res == null)
+            {
+                return NotFound("There is no such control number");
+            }
+            else
+            {
+                return Ok(res);
+            }
+        }
+
+
 
 
     }

@@ -11,6 +11,7 @@ namespace PaymentGateway.Application.Repository
     {
         Task AddPayment(Payment payment);
         Task<List<Payment>> GetAllPaymentsAsync();
+        Task<Payment> GetByControlNumber(string controlNumber);
         Task<Payment> GetFeesById(int id);
     }
 }

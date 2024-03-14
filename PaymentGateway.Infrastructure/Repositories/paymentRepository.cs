@@ -29,10 +29,16 @@ namespace PaymentGateway.Infrastructure.Repositories
         public async Task<List<Payment>> GetAllPaymentsAsync()
         {
            var res = await _context.payments.ToListAsync();
-            return res;
+            
+                return res;
+           
         }
 
-       
+        public async Task<Payment> GetByControlNumber(string controlNumber)
+        {
+            var res = await _context.payments.FirstOrDefaultAsync(P => P.ControlNumber == controlNumber);
+            return res;
+        }
 
         public async Task<Payment> GetFeesById(int id)
         {
